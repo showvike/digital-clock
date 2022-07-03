@@ -5,7 +5,7 @@ function Clock() {
         setInterval(() => {
             setTime(new Date());            
         }, 100);
-    });
+    }, []);
 
     const [hours, minutes, seconds] = [time.getHours(),
     time.getMinutes(), time.getSeconds()];
